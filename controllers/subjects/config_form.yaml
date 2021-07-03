@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: crazy.declinations::form.subject_record_name
+
+# Model Form Field configuration
+form: $/crazy/declinations/models/subject/fields.yaml
+
+# Model Class name
+modelClass: Crazy\Declinations\Models\Subject
+
+# Default redirect location
+defaultRedirect: crazy/declinations/subjects
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: crazy/declinations/subjects/update/:id
+    redirectClose: crazy/declinations/subjects
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: crazy/declinations/subjects
+    redirectClose: crazy/declinations/subjects
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

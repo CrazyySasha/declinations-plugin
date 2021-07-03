@@ -1,0 +1,12 @@
+<div class="padded-container container-flush">
+    <?= $this->makeHintPartial('crazy_declinations_warning_hint', 'hint', [
+        'type' => 'warning', 
+        "title" => e(trans("crazy.declinations::list.hint_develop_title")),
+        "subtitle" => e(trans("crazy.declinations::list.hint_develop_subtitle")),
+        "icon" => true,
+    ]) ?>
+</div>
+
+<div>
+    <?= $this->listRender() ?>
+</div>

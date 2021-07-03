@@ -1,0 +1,16 @@
+<?php Block::put('breadcrumb') ?>
+    <ul>
+        <li>
+            <a href="<?= Backend::url('crazy/declinations/subjects') ?>">
+                <?= e(trans('crazy.declinations::form.subjects')) ?>
+            </a>
+        </li>
+        <li>
+            <a href='<?= Backend::url("crazy/declinations/subjects/$context/$subjectId") ?>'>
+                <?= e(trans("crazy.declinations::reorder.{$context}_bread_title")) ?>
+            </a>
+        </li>
+        <li><?= e($this->pageTitle) ?></li>
+    </ul>
+<?php Block::endPut() ?>
+<?= $this->reorderRender() ?>

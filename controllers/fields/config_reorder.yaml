@@ -1,0 +1,17 @@
+# ===================================
+#  Reorder Behavior Config
+# ===================================
+
+# Reorder Title
+title: crazy.declinations::reorder.fields_title
+
+# Attribute name
+nameFrom: name
+
+# Model Class name
+modelClass: Crazy\Declinations\Models\Field
+
+# # Toolbar widget configuration
+# toolbar:
+#     # Partial for toolbar buttons
+#     buttons: reorder_toolbar

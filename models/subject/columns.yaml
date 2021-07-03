@@ -1,0 +1,48 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+
+    is_active:
+        label: crazy.declinations::list.is_active
+        type: switch
+
+    is_translate:
+        label: crazy.declinations::list.is_translate
+        type: switch
+        invisible: true
+
+    name:
+        label: crazy.declinations::list.name
+        searchable: true
+
+    code: 
+        label: crazy.declinations::list.code
+        searchable: true 
+
+    controller: 
+        label: crazy.declinations::list.controller
+        invisible: true
+
+    model: 
+        label: crazy.declinations::list.model
+        invisible: true
+    
+    fields_name:
+        label: crazy.declinations::list.fields
+        type: text
+        relation: fields
+        select: name
+        invisible: true
+
+    created_at:
+        label: crazy.declinations::list.created_at
+        type: timetense
+    
+    updated_at:
+        label: crazy.declinations::list.updated_at
+        type: timetense

@@ -1,0 +1,21 @@
+<div data-control="toolbar">
+
+    <?php foreach ($relationToolbarButtons as $button): ?>
+
+        <?php if ($button == 'update'): ?>
+            <?= $this->relationMakePartial('button_update', [
+                'relationManageId' => $relationViewModel->getKey()
+            ]) ?>
+        <?php else: ?>
+            <?= $this->relationMakePartial('button_'.$button) ?>
+        <?php endif ?>
+
+    <?php endforeach ?>
+    <?php if (in_array($this->formGetContext(), ["update", "preview"])) : ?>
+        <a
+            href='<?= Backend::url("crazy/declinations/fields/reorder/$formModel->id/{$this->formGetContext()}") ?>'
+            class="btn btn-sm btn-secondary">
+            <i class="icon-exchange"></i> <?= e(trans('crazy.declinations::relation.reorder_button')) ?>
+        </a>
+    <?php endif ?>
+</div>

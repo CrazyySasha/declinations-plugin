@@ -1,0 +1,20 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    name:
+        label: crazy.declinations::form.field_name
+        type: text
+        span: auto
+        comment: crazy.declinations::form.field_name_comment 
+    code: 
+        label: crazy.declinations::form.field_code
+        type: text
+        placeholder: declinatedName
+        span: auto
+        preset:
+            field: name
+            type: camel
+        comment: crazy.declinations::form.field_code_comment

@@ -1,0 +1,52 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    is_active:
+        label: crazy.declinations::form.is_active
+        type: switch
+        span: left 
+        comment: crazy.declinations::form.is_active_comment
+        
+    is_translate:
+        label: crazy.declinations::form.is_translate
+        type: switch
+        span: right
+        comment: crazy.declinations::form.is_translate_comment
+        commentHtml: true
+
+    name:
+        label: crazy.declinations::form.name
+        type: text
+        span: auto
+        comment: crazy.declinations::form.name_comment
+
+    code:
+        label: crazy.declinations::form.code
+        type: text
+        span: auto
+        placeholder: decNames
+        preset:
+            field: name
+            type: camel
+        comment: crazy.declinations::form.code_comment
+        
+        
+    controller:
+        label: crazy.declinations::form.controller
+        type: dropdown
+        span: auto
+        comment: crazy.declinations::form.controller_comment
+
+    model:
+        label: crazy.declinations::form.model
+        type: dropdown
+        span: auto
+        comment: crazy.declinations::form.model_comment
+
+    fields:
+        label: crazy.declinations::form.fields
+        type: partial
+        comment: crazy.declinations::form.fields_comment

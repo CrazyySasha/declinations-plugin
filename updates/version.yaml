@@ -1,0 +1,5 @@
+1.0.1: 
+  - First version of Declinations
+  - v101/create_declinables_table.php
+  - v101/create_fields_table.php
+  - v101/create_subjects_table.php

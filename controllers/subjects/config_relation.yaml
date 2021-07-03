@@ -1,0 +1,16 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+fields:
+    
+    label: crazy.declinations::relation.field's
+    
+    view:
+        list: $/crazy/declinations/models/field/columns.yaml
+        toolbarButtons: create|delete
+        toolbarPartial: relation_toolbar
+    
+    manage:
+        form: $/crazy/declinations/models/field/fields.yaml
+        recordsPerPage: 10
